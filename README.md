@@ -1,1 +1,1 @@
-Simple bot created to automate tournament creation on Start.gg
+Simple bot created to automate tournament creation on Start.gg. Just fill out the config.yaml file with your start.gg email/password, tournament name, and attendee email(if you wish to add yourself) and run the application.
