@@ -36,15 +36,14 @@ class Program
       Thread.Sleep(3000);
       driver.Navigate().GoToUrl("https://www.start.gg/create/tournament");
 
-      FillInputField(wait, By.Name("name"), "Test");
+      FillInputField(wait, By.Name("name"), config["TournamentName"]);
       FillInputField(wait, By.Name("primaryContact"), "arst49695@gmail.com");
 
-      string startTime = DateTime.Today.ToString("MM/dd/yyyy");
+      string startTime = DateTime.Today.ToString("MM/dd/yyyy");      
       FillInputField(driver, "startAt", startTime + " 07:15 pm");
       FillInputField(driver, "endAt", startTime + " 11:15 pm");
 
       ClickButton(wait, By.XPath("//button[contains(text(), 'Copy Tournament Settings')]"));
-      
       FillInputField(wait, By.XPath("//input[@role='combobox' and @aria-activedescendant='react-select-2--value']"), "test");
 
       Console.WriteLine("Please complete the Captcha and click submit. Then press any key to continue.");
@@ -67,8 +66,15 @@ class Program
       ClickButton(wait, By.XPath("//*[@id='main']/div/div/div/div[2]/div[2]/div/section[3]/header/div/button"));
       ClickButton(wait, By.XPath("/html/body/div[6]/div[2]/div/div/form/div[2]/div/div/div[1]/label/section/div/div[1]/div/div/div[2]/span/div[2]"));
       ClickButton(wait, By.XPath("/html/body/div[6]/div[2]/div/div/form/div[3]/div/div/div/div/button"));
-      
-    }
+
+      //Add Attendee
+      ClickButton(wait, By.XPath("//*[@id='app_feature_canvas']/div/div/div/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div[4]/div/div[2]/span/a"));
+      ClickButton(wait, By.XPath("//*[@id='main']/div/div/div/div[1]/div[3]/div/div[2]/button"));
+      FillInputField(wait, By.XPath("/html/body/div[6]/div[2]/div/div/form/div/section/div/div/div[2]/div/div[1]/div/input"), config["Attendee"]);
+      ClickButton(wait, By.XPath("/html/body/div[7]/div/div/div/div/div[1]/div/div/div"));
+      FillInputField(wait, By.XPath("/html/body/div[6]/div[2]/div/div/form/div[2]/div/section[2]/div/section/div/div/section/div/div/div[2]/div[2]/div[1]/div/div/div/input"), config["AttendeeConnectCode"]);
+      ClickButton(wait, By.XPath("/html/body/div[6]/div[2]/div/div/form/section/div/div/div/div/button[1]"));
+    } 
     catch(Exception ex) 
     {
       Console.WriteLine("Skill issue occured: " + ex.Message);
