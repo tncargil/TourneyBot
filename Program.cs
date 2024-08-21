@@ -31,6 +31,9 @@ class Program
 
       FillInputField(wait, By.Name("loginPassword"), config["Password"]);
 
+      Console.WriteLine("Please complete the Captcha if there is one and DO NOT click submit. Then press any key to continue.");
+      Console.ReadLine();
+      
       ClickButton(wait, By.Name("loginSubmit"));
 
       Thread.Sleep(3000);

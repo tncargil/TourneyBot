@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TourneyBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8c6156d00de45df047023189bcd2a383e184b98")]
 [assembly: System.Reflection.AssemblyProductAttribute("TourneyBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TourneyBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

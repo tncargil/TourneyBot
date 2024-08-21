@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Neo\\Documents\\CodeRepo\\TourneyBot\\TourneyBot.csproj": {}
+    "/home/neo/Documents/CodeRepos/TourneyBot/TourneyBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neo\\Documents\\CodeRepo\\TourneyBot\\TourneyBot.csproj": {
+    "/home/neo/Documents/CodeRepos/TourneyBot/TourneyBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neo\\Documents\\CodeRepo\\TourneyBot\\TourneyBot.csproj",
+        "projectUniqueName": "/home/neo/Documents/CodeRepos/TourneyBot/TourneyBot.csproj",
         "projectName": "TourneyBot",
-        "projectPath": "C:\\Users\\Neo\\Documents\\CodeRepo\\TourneyBot\\TourneyBot.csproj",
-        "packagesPath": "C:\\Users\\Neo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Neo\\Documents\\CodeRepo\\TourneyBot\\obj\\",
+        "projectPath": "/home/neo/Documents/CodeRepos/TourneyBot/TourneyBot.csproj",
+        "packagesPath": "/home/neo/.nuget/packages/",
+        "outputPath": "/home/neo/Documents/CodeRepos/TourneyBot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Neo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/neo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,16 +73,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.32, 6.0.32]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.107/RuntimeIdentifierGraph.json"
         }
       }
     }
